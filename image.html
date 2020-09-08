@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>p5.js</title>
+	
+		
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet"> 
+	
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@400&display=swap" rel="stylesheet"> 
+	
+	
+	<style>
+		body{
+            height:1000vh;
+            margin:0;
+        }
+ 
+        
+        eng{
+            font-family: 'Roboto Mono', monospace;
+            font-size:12px;
+        }
+        
+        kor{
+            font-family: 'Nanum Gothic Coding', monospace;
+            font-size:11px;
+        }
+        
+	</style>
+
+	
+	
+</head>
+<body>
+  
+  <br>
+   <eng>press alphabetical key to start building (case sensitive)</eng>
+   <br>
+   <kor>영문 키를 눌러 거리를 채워 보세요 (대소문자 구분)</kor>
+   <br>
+   <br>
+    <div id="container"></div>
+    
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.min.js"></script>
+
+	<script>
+        
+ //let img1; // Declare variable 'img'.
+ //let img2;
+ //let img3;
+ //let img4;
+ //let img5;
+ //let img6;
+ //let img7;
+ //let img8;
+ //let img9;
+ //let img10;
+        
+ //let another;
+
+function setup() {
+  createCanvas(1650, 320);
+    background(255);
+    
+    
+    button1 = createButton('clear')
+    button2 = createButton('save')
+    
+    button1.mousePressed(changeBG);
+    button2.mousePressed(saveCanvas);
+    
+    
+  img1 = loadImage('garo/1_.png'); // Load the image
+  img2 = loadImage('garo/2_.png');
+  img3 = loadImage('garo/3_.png');
+  img4 = loadImage('garo/4_.png');
+  img5 = loadImage('garo/5_.png');
+  img6 = loadImage('garo/6_.png');
+  img7 = loadImage('garo/7_.png');
+  img8 = loadImage('garo/8_.png');
+  img9 = loadImage('garo/9_.png');
+  img10 = loadImage('garo/10_.png');
+  img11 = loadImage('garo/11_.png');
+  img12 = loadImage('garo/12_.png');
+  img13 = loadImage('garo/13_.png');
+  img14 = loadImage('garo/14_.png');
+  img15 = loadImage('garo/15_.png');
+  img16 = loadImage('garo/16_.png');
+    
+    
+  img1r = loadImage('garo/1_].png');
+  img2r = loadImage('garo/2_].png');
+  img3r = loadImage('garo/3_].png');
+  img4r = loadImage('garo/4_].png');
+  img5r = loadImage('garo/5_].png');
+  img6r = loadImage('garo/6_].png');
+  img7r = loadImage('garo/7_].png');
+  img8r = loadImage('garo/8_].png');
+  img9r = loadImage('garo/9_].png');
+  img10r = loadImage('garo/10_].png');
+  img11r = loadImage('garo/11_].png');
+  img12r = loadImage('garo/12_].png');
+  img13r = loadImage('garo/13_].png');
+  img14r = loadImage('garo/14_].png');
+  img15r = loadImage('garo/15_].png');
+  img16r = loadImage('garo/16_].png');
+    
+
+  back1 = loadImage('garo/a.png');
+  back2 = loadImage('garo/b.png');
+  back3 = loadImage('garo/c.png');
+  back4 = loadImage('garo/d.png');
+  back5 = loadImage('garo/l.png');
+  back6 = loadImage('garo/k.png');
+  back7 = loadImage('garo/g.png');
+  back8 = loadImage('garo/h.png');
+  back9 = loadImage('garo/m.png');
+  back10 = loadImage('garo/n.png');
+    
+    
+  back1r = loadImage('garo/a_s.png');        
+  back2r = loadImage('garo/b_s.png');    
+  back3r = loadImage('garo/c_s.png');
+  back4r = loadImage('garo/d_s.png');
+  back5r = loadImage('garo/l_s.png');
+  back6r = loadImage('garo/k_s.png');    
+  back7r = loadImage('garo/g_s.png');    
+  back8r = loadImage('garo/h_s.png');
+  back9r = loadImage('garo/m_s.png');
+  back10r = loadImage('garo/n_s.png');
+  
+    
+  //another = createGraphics(1550,640);
+
+    
+}
+
+function draw() {
+    
+    another.background(100);
+  
+    
+}
+
+function keyTyped() {
+  if (key === 'a'){
+    image(img1, mouseX-200, 0, 400, 320);
+  }
+    
+  if (key === 's'){
+    image(img2, mouseX-200, 10, 400, 320);
+  }
+   if (key === 'd'){
+    image(img3, mouseX-200, 0, 400, 320);
+  }
+   if (key === 'f'){
+    image(img4, mouseX-200, 0, 400, 320);
+  }
+    
+    if (key === 'g'){
+    image(img5, mouseX-200, 0, 400, 320);
+  } 
+    
+   if (key === 'h'){
+    image(img6, mouseX-200, 0, 400, 320);
+  }
+    
+   if (key === 'j'){
+    image(img7, mouseX-200, 0, 400, 320);
+  }
+    
+   if (key === 'k'){
+    image(img8, mouseX-200, 0, 400, 320);
+  }
+
+   if (key === 'l'){
+    image(img9, mouseX-200, 0, 400, 320);
+  }
+    
+   if (key === 'z'){
+    image(img10, mouseX-200, 30, 400, 320);
+  }
+    
+   if (key === 'x'){
+    image(img11, mouseX-200, 0, 400, 320);
+  }
+    
+   if (key === 'c'){
+    image(img12, mouseX-200, 0, 400, 320);
+  }
+    
+   if (key === 'v'){
+    image(img13, mouseX-200, 10, 400, 320);
+  }
+
+   if (key === 'b'){
+    image(img14, mouseX-200, 0, 400, 320);
+  }
+    
+    if (key === 'n'){
+    image(img15, mouseX-200, 20, 400, 320);
+  }
+    
+   if (key === 'm'){
+    image(img16, mouseX-200, 10, 400, 320);
+  }
+
+    
+    //
+    
+      if (key === 'A'){
+    image(img1r, mouseX-200, 0, 400, 320);
+  }
+    
+  if (key === 'S'){
+    image(img2r, mouseX-200, 10, 400, 320);
+  }
+   if (key === 'D'){
+    image(img3r, mouseX-200, 0, 400, 320);
+  }
+   if (key === 'F'){
+    image(img4r, mouseX-200, 0, 400, 320);
+  }
+    
+    if (key === 'G'){
+    image(img5r, mouseX-200, 0, 400, 320);
+  } 
+    
+   if (key === 'H'){
+    image(img6r, mouseX-200, 0, 400, 320);
+  }
+    
+   if (key === 'J'){
+    image(img7r, mouseX-200, mouseY, 400, 320);
+  }
+    
+   if (key === 'K'){
+    image(img8r, mouseX-200, 0, 400, 320);
+  }
+
+   if (key === 'L'){
+    image(img9r, mouseX-200, 0, 400, 320);
+  }
+    
+   if (key === 'Z'){
+    image(img10r, mouseX-200, 30, 400, 320);
+  }
+    
+   if (key === 'X'){
+    image(img11r, mouseX-200, 0, 400, 320);
+  }
+    
+   if (key === 'C'){
+    image(img12r, mouseX-200, 0, 400, 320);
+  }
+    
+   if (key === 'V'){
+    image(img13r, mouseX-200, 10, 400, 320);
+  }
+
+   if (key === 'B'){
+    image(img14r, mouseX-200, 0, 400, 320);
+  }
+    
+    if (key === 'N'){
+    image(img15r, mouseX-200, 20, 400, 320);
+  }
+    
+   if (key === 'M'){
+    image(img16r, mouseX-200, 10, 400, 320);
+  } 
+    
+//
+    
+   if (key === 'q'){
+    image(back1, mouseX-100, mouseY, 237, 500);
+   }
+
+   if (key === 'w'){
+    image(back2, mouseX-100, 0, 450, 320);
+   }
+
+   if (key === 'e'){
+    image(back3, mouseX-100, 0, 238, 320);
+   }
+    
+   if (key === 'r'){
+    image(back4, mouseX-100, mouseY, 300, 183);
+   }
+       
+   if (key === 't'){
+    image(back5, mouseX-100, mouseY, 270, 100);
+   }
+       
+   if (key === 'y'){
+    image(back6, mouseX-10, mouseY, 70, 60);
+   }
+       
+   if (key === 'u'){
+    image(back7, mouseX-100, mouseY, 116, 182);
+   }
+
+   if (key === 'i'){
+    image(back8, mouseX-100, mouseY, 400, 320);
+   }
+       
+   if (key === 'o'){
+    image(back9, mouseX-10, mouseY, 68, 163);
+   }
+       
+   if (key === 'p'){
+    image(back10, mouseX-100, mouseY, 286, 300);
+   }
+       
+       
+    //
+    
+    if (key === 'Q'){
+    image(back1r, mouseX-100, mouseY, 125, 370);
+   }
+
+   if (key === 'W'){
+    image(back2r, mouseX-100, mouseY, 210, 140);
+   }
+
+   if (key === 'E'){
+    image(back3r, mouseX-100, mouseY, 150, 233);
+   }
+    
+   if (key === 'R'){
+    image(back4r, mouseX-100, mouseY, 210, 167);
+   }
+       
+   if (key === 'T'){
+    image(back5r, mouseX-100, mouseY, 110, 240);
+   }
+       
+   if (key === 'Y'){
+    image(back6r, mouseX-10, mouseY, 70, 60);
+   }
+       
+   if (key === 'U'){
+    image(back7r, mouseX-100, mouseY, 195, 71);
+   }
+
+   if (key === 'I'){
+    image(back8r, mouseX-100, mouseY, 268, 104);
+   }
+       
+   if (key === 'O'){
+    image(back9r, mouseX-10, mouseY, 68, 163);
+   }
+       
+   if (key === 'P'){
+    image(back10r, mouseX-100, mouseY, 286, 168);
+   }
+    
+    
+
+    
+    
+    //
+       
+    //noStroke();
+   // if (key === '.'){
+     //   rect(0,0,1600,320);
+    //}
+    
+  }
+
+        
+        
+        
+//function keyPressed(){
+  //  if ( keyCode === 32){
+    //    saveCanvas();
+    //}
+//} 
+       
+        
+function changeBG(){
+    clear();
+    background(255);
+}        
+
+
+ 
+        
+	</script>
+
+</body>
+</html>
